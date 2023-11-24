@@ -1,0 +1,86 @@
+.profileMainContainer {
+  width: 100%;
+  position: relative;
+}
+
+.profileSubContainer {
+  width: 100%;
+  display: flex;
+  background-color: #eee;
+}
+
+.profileContainer {
+  /* flex: 9; */
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+/** For Profile Center */
+.profileCenter {
+  width: 100%;
+}
+
+.profileFollowersCont {
+  width: 100%;
+  padding: 15px 30px 10px 30px;
+}
+
+.profileFollowersHdr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+  padding: 8px 10px;
+  border-top: 2px solid #888;
+}
+
+.profileFollowersHdr h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.profileFollowersHdr .closeFollowersAreaBtn {
+  all: unset;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.closeFollowersAreaBtn .closeIcon {
+  font-size: 2.2rem !important;
+  color: #333;
+}
+
+.profileFollowersList {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.profileFollowersList::-webkit-scrollbar {
+  height: 5px;
+}
+
+.profileFollowersList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.profileFollowersList::-webkit-scrollbar-thumb {
+  background-color: #555555;
+  border-radius: 10px;
+}
+
+/** For Profile Bottom */
+.profileBottom {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+}

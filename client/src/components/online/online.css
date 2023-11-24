@@ -1,0 +1,49 @@
+.eachOnlineFriend {
+  width: 100%;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.eachOnlineFriend:hover {
+  background-color: #fff;
+}
+
+.onlineFrndImageDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onlineStatus {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: -5px;
+  right: -1.5px;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: rgb(42, 173, 42);
+  border: 2px solid #eee;
+}
+
+.onlineFriendImage {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 100%;
+  position: relative;
+}
+
+.onlineFriendName {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #333;
+}

@@ -1,0 +1,118 @@
+.signUpArea {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+/** Sign-Up Header */
+.signUpHdr {
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #005a7e;
+}
+
+.signUpHdr h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/** Sign-Up Form */
+.signUpForm {
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formFieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+}
+
+.nameFields,
+.passwordFields,
+.otherFields {
+  display: flex;
+  gap: 4%;
+}
+
+.nameFields input,
+.emailField input,
+.passwordFields input,
+.otherFields input,
+.otherFields select {
+  width: 48%;
+  border: none;
+  outline: none;
+  padding: 6px 8px !important;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+  border-bottom: 2px solid #888;
+  border-radius: 2px;
+}
+
+.emailField input {
+  width: 100% !important;
+}
+
+.otherFields select option {
+  font-weight: 600;
+}
+
+.nameFields input:focus,
+.emailField input:focus,
+.passwordFields input:focus,
+.otherFields input:focus,
+.otherFields select:focus {
+  transition: 0.3s;
+  border-bottom: 2px solid #007eaf !important;
+}
+
+/** Sign-Up Button */
+.SignUpBtn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00293a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/** Sign-In Suggestion */
+.signInSuggestion {
+  padding: 0px 15px;
+}
+
+.signInSuggestion p {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.signInSuggestion p span {
+  font-weight: bold;
+  color: #00293a;
+}
+
+.signInSuggestion p span:hover {
+  cursor: pointer;
+  text-decoration: 2px #003a52 underline;
+}

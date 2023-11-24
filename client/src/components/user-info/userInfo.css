@@ -1,0 +1,105 @@
+.userInfo {
+  flex: 3;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/**  For Intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px 15px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.intro h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  padding: 0px 0px 6px 0px;
+  border-bottom: 1px solid #888;
+}
+
+.introIcon {
+  margin-right: 6px;
+  font-size: 2.2rem !important;
+}
+
+.intro span {
+  display: flex;
+  align-items: center;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #444 !important;
+}
+
+.intro strong {
+  margin-left: 6px;
+}
+
+/** For Friends */
+.friends {
+  padding: 10px 20px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.friendHeading {
+  display: flex;
+  justify-content: space-between;
+  color: #222;
+  padding: 0px 0px 6px 0px;
+  border-bottom: 1px solid #888;
+}
+
+.friendHeading h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.friendHeading span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.friendsArea {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.eachFriend {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.eachFriend img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.eachFriend:hover img {
+  transition: 0.3s;
+  filter: brightness(0.9);
+}
+
+.eachFriend span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  color: #444;
+}

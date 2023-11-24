@@ -1,0 +1,131 @@
+.signInArea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/** Sign-In Header */
+.signInHdr {
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #005a7e;
+}
+
+.signInHdr h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/** Sign-In Form */
+.signInForm {
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formFieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+}
+
+.loginEmailField,
+.loginPasswordField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.loginEmailField label,
+.loginPasswordField label {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+
+.loginEmailField input,
+.loginPasswordField input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+  border: 2px solid #888;
+  border-radius: 6px;
+}
+
+.loginEmailField input:focus,
+.loginPasswordField input:focus {
+  transition: 0.3s;
+  border: 2px solid #007eaf !important;
+}
+
+/** Sign-In Button */
+.SignInBtn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0px !important;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00293a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.SignInBtn:disabled {
+  cursor: not-allowed;
+}
+
+/** Forgot Password  */
+.forgotPassword {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  margin: 5px 0px 17px 0px;
+}
+
+.forgotPassword:hover {
+  cursor: pointer;
+  text-decoration: 2px #333 underline;
+}
+
+.signUpSuggestion {
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.signUpSuggestion p {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.signUpSuggestion p span {
+  font-weight: bold;
+  color: #00293a;
+}
+
+.signUpSuggestion p span:hover {
+  cursor: pointer;
+  text-decoration: 2px #003a52 underline;
+}

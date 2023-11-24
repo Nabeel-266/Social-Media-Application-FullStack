@@ -1,0 +1,264 @@
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/** For Post Top */
+.postTop {
+  width: 100%;
+  padding: 12px;
+  /* background-color: darkcyan; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Post top Left */
+.postTopLeft {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postAuthorImage {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.postInfo {
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.postAuthorName {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.postTime {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Post top Right */
+.postTopRight {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.postTopRight span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.postOptionsIcon {
+  color: #333;
+  font-size: 2.4rem !important;
+}
+
+.postTopRight .postOptions {
+  width: 180%;
+  padding: 6px;
+  list-style: none;
+  position: absolute;
+  top: 80%;
+  right: 35%;
+  background-color: #454545b8;
+  backdrop-filter: blur(5px);
+  border-radius: 8px 0px 8px 8px;
+}
+
+.postOptions .eachOption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.eachOption:hover {
+  transition: 0.3s;
+  color: #222;
+  background-color: #eee;
+}
+
+.eachOption .eachOptIcon {
+  font-size: 1.8rem;
+  margin-right: 6px;
+  margin-bottom: 1px;
+}
+
+/** For Post Center */
+.postCenter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: darkslateblue; */
+}
+
+.postText {
+  width: 100%;
+  padding: 0px 12px 10px 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.postImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+/** For Post Bottom */
+.postBottom {
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: darkslategrey; */
+}
+
+.postBottomUp {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeInfo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.likeIcon {
+  font-size: 2.1rem !important;
+  color: #fff;
+  background-color: #0053c0;
+  padding: 4px;
+  border-radius: 100%;
+  margin-right: 4px;
+}
+
+.commentInfo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.commentInfo:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.postBottomMid {
+  width: 100%;
+  padding: 4px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #888;
+}
+
+.postBtn {
+  all: unset;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.postBtn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ddd;
+}
+
+.postBtnIcon {
+  font-size: 1.8rem !important;
+  margin-right: 3px;
+  margin-top: 1px;
+}
+
+.commentIcon {
+  margin-top: 3px;
+}
+
+.postBottomDown {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  border-top: 1px solid #888;
+}
+
+.postBottomDown .commentUserImg {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.postBottomDown input {
+  all: unset;
+  width: calc(100% - 82px);
+  padding: 9px 15px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #555;
+  border-radius: 50px;
+}
+
+.postBottomDown input::placeholder {
+  color: #eee;
+  font-weight: 500;
+}
+
+.sendCommentBtn {
+  all: unset;
+  padding: 7px 5px 7px 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.sendCommentIcon {
+  font-size: 2.2rem !important;
+}
+
+.sendCommentBtn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #d6d6d6;
+}

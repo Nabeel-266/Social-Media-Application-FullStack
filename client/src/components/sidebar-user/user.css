@@ -1,0 +1,47 @@
+.eachUser {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  border-radius: 4px;
+  cursor: default;
+  transition: 0.3s;
+}
+
+.eachUser:hover {
+  background-color: rgba(0, 65, 90, 0.15);
+}
+
+.userNameAndImageSide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.userImage {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.userName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.followUnfollowBtn {
+  all: unset;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  background-color: #004461;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}

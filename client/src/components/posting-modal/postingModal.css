@@ -1,0 +1,269 @@
+.modalOverlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postModal {
+  width: 600px;
+  padding: 12px 20px;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.upLoadArea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.upLoadArea span {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #ddd;
+  margin-left: 10px;
+}
+
+.modalHeader {
+  padding: 0px 0px 8px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #444;
+}
+
+.modalHeader h2 {
+  color: #333;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.modalHeader .closeModalBtn {
+  all: unset;
+  padding: 3px;
+  position: absolute;
+  right: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.closeIcon {
+  font-size: 2rem !important;
+  color: #fff;
+}
+
+.modalMiddle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.postUser {
+  padding: 10px 0px;
+  display: flex;
+  gap: 8px;
+}
+
+.postUserImage {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid #444;
+}
+
+.postUserName {
+  width: calc(100% - 53px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+}
+
+.postUserName h6 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.postUserName span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.postTextArea {
+  width: 100%;
+}
+
+.postTextArea .textArea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: 600;
+  overflow: auto;
+  color: #444;
+}
+
+.textArea::-webkit-scrollbar,
+.fileViewer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textArea::-webkit-scrollbar-track,
+.fileViewer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.textArea::-webkit-scrollbar-thumb,
+.fileViewer::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.postFileViewArea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #444;
+}
+
+.fileViewer {
+  width: 100%;
+  max-height: 150px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.fileViewer .removeAttachFileBtn {
+  all: unset;
+  position: fixed;
+  top: 10px;
+  right: 8px !important;
+  padding: 3px;
+  position: absolute;
+  right: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.removeIcon {
+  font-size: 2rem !important;
+  color: #444;
+}
+
+.fileViewer .selectedImage {
+  width: 100%;
+}
+
+.postAddEmoji {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postAddEmoji .emoji {
+  font-size: 2.6rem;
+  border-radius: 100%;
+  color: #333;
+  cursor: pointer;
+}
+
+.postAttachFilesBar {
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+.postAttachFilesBar h6 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.attachFileOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.fileIcon {
+  padding: 6px;
+  font-size: 3.4rem !important;
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.fileOption input {
+  display: none;
+}
+
+.modalFooter {
+  width: 100%;
+  padding: 8px 0px;
+  margin-top: 10px;
+}
+
+.postHandlerBtn {
+  all: unset;
+  width: 100%;
+  padding: 7px 0px;
+  border: none;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 4px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.postHandlerBtn:active {
+  transform: scale(0.98);
+}
